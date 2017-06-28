@@ -1,7 +1,11 @@
 body {
+  /*video styling in the body*/
   margin: 0;
   background: #000;
 }
+
+
+/*video styling*/
 
 video {
   position: fixed;
@@ -22,7 +26,7 @@ video {
   opacity: .5;
 }
 
-#polina {
+#websmart {
   font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
   font-weight: 100;
   background: rgba(0, 0, 0, 0.3);
@@ -41,7 +45,7 @@ h1 {
   letter-spacing: .3rem;
 }
 
-#polina button {
+#websmart button {
   display: block;
   width: 80%;
   padding: .4rem;
@@ -55,7 +59,7 @@ h1 {
   transition: .3s background;
 }
 
-#polina button:hover {
+#websmart button:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -79,9 +83,6 @@ a:hover {
 }
 
 @media screen and (max-device-width: 800px) {
-  html {
-    background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed;
-  }
   #bgvid {
     display: none;
   }
