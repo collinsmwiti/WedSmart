@@ -1,3 +1,6 @@
+//apiKey
+// var apiKey = require('.env').apiKey;
+
 //styling videos
 var vid = document.getElementById("bgvid");
 

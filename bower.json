@@ -1,0 +1,17 @@
+{
+  "name": "wedsmart",
+  "description": "provides a platform where the user can book wedding",
+  "main": "gulpfile.js",
+  "authors": [
+    "Alex-Kinuthia and collinsmwiti"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/collinsmwiti/WedSmart",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

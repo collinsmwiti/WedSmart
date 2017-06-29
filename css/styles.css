@@ -87,3 +87,10 @@ a:hover {
     display: none;
   }
 }
+
+
+/*login error*/
+
+#loginError {
+  display: none;
+}
