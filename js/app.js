@@ -51,7 +51,7 @@ $("#login").submit(function(error) {
 
     firebase.auth().signInWithEmailAndPassword(email, password)
       .then(function() {
-        window.location.replace('./subscription.html');
+        window.location.replace('./main.html');
       }).catch(function(error) {
         // $("#loginError").show().text(error.message);
         console.log(error);
@@ -74,7 +74,7 @@ $('#register').submit(function(event) {
   // Register user
   firebase.auth().createUserWithEmailAndPassword(email, password)
     .then(function() {
-      window.location.replace("./subscription.html");
+      window.location.replace("./main.html");
     })
     .catch(function(error) {
       console.log('register error', error);
@@ -84,7 +84,7 @@ $('#register').submit(function(event) {
 $('#logout').click(function() {
   firebase.auth().signOut().then(function() {
     // Sign-out successful.
-    // window.location.replace();
+    window.location.replace("./index.html");
     console.log("Signed out");
   }).catch(function(error) {
     console.log(error);
@@ -95,7 +95,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   // app.user = user;
   console.log('user', user);
 
-  if (!user) {
-    window.location.replace("./login.html");
-  }
+  // if (!user) {
+  //   window.location.replace("./index.html");
+  // }
 });
