@@ -1,767 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <style>
-    .container {
-      overflow: hidden;
-      background-color: #333;
-      font-family: Arial;
-    }
-
-    .container a {
-      float: left;
-      font-size: 16px;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    .ben {
-      padding-top: 1%;
-      padding-bottom: 2px;
-    }
-
-    .dropdown {
-      float: left;
-      overflow: hidden;
-    }
-
-    .dropdown .dropbtn {
-      font-size: 16px;
-      border: none;
-      outline: none;
-      color: white;
-      padding: 14px 16px;
-      background-color: inherit;
-    }
-
-    .container a:hover,
-    .dropdown:hover .dropbtn {
-      background-color: pink;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-    }
-
-    .al {
-      padding-top: 30px;
-      padding-bottom: 20%;
-    }
-
-    .dropdown-content a {
-      float: none;
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
-
-    .navbar-header {
-      padding-top: 12px;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #ddd;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-    .abd {
-      padding-bottom: 70%;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wedsmart | Short description about company">
+  <meta name="author" content="Your name">
+  <title>Wedsmart</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap responsive -->
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <!-- Font awesome - iconic font with IE7 support -->
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="css/font-awesome-ie7.css" rel="stylesheet">
+  <!-- Bootbusiness theme -->
+  <link href="css/wed-smart.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/wed-smart.js"></script>
 </head>
 
-
-<div class="ben">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/135/167257135_c1931d0a-2a33-4855-9963-25f85a072ca9.png?cb=1498573044 " alt="" height="70" width="102">
-      </a>
-    </div>
-    <div class="al">
-      <div class="abd">
-        <a href="#home">HOME</a>
-        <a href="#home">BLOG</a>
-        <a href="#home">CREATE WEDDING WEBSITE</a>
-        <a href="#news">CONTACT US</a>
-        <div class="dropdown">
-          <button class="dropbtn">SERVICES</button>
-          <div class="dropdown-content">
-            <a href="#">
-              <font size="2">Cakes</a>
-            <a href="#">
-              <font size="2">Catering</a>
-            <a href="#">
-              <font size="2">Decor</a>
-            <a href="#">
-              <font size="2">Drinks</a>
-            <a href="#">
-              <font size="2">Decos</a>
-            <a href="#">
-              <font size="2">Entertainment</a>
-            <a href="#">
-              <font size="2">View more...</a>
+<body>
+  <!-- Start: HEADER -->
+  <header>
+    <!-- Start: Navigation wrapper -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a href="main.html" class="brand brand-bootbus">Wedsmart</a>
+          <!-- Below button used for responsive navigation -->
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          <!-- Start: Primary navigation -->
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="nav-header">Services</li>
+                  <li><a href="product.html">Catering</a></li>
+                  <li><a href="product.html">Entertainment</a></li>
+                  <li><a href="service.html">Photographers</a></li>
+                  <li><a href="product.html">Transport</a></li>
+                  <li><a href="service.html">Videographing</a></li>
+                  <li><a href="service.html">Venues</a></li>
+                  <li><a href="all_services.html">View More</a></li>
+                </ul>
+              </li>
+              <li><a href="vendor.html">Vendors</a></li>
+              <li><a href="faq.html">Blog</a></li>
+              <li><a href="contact_us.html">Contact us</a></li>
+              <li><a href="signup.html">Sign up</a></li>
+              <li><a href="signin.html">Sign in</a></li>
+            </ul>
           </div>
         </div>
-        <a href="#news">Link</a>
       </div>
     </div>
-  </div>
-</div>
-
-</html>
-
-<style>
-  .container1 {
-    margin-top: 20px;
-    padding-right: 8%;
-  }
-  /* Carousel Styles */
-
-  .carousel-indicators .active {
-    background-color: #2980b9;
-  }
-
-  .carousel-inner img {
-    width: 100%;
-    max-height: 460px
-  }
-
-  .carousel-control {
-    width: 0;
-  }
-
-  .carousel-control.left,
-  .carousel-control.right {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    background-image: none;
-    background-repeat: no-repeat;
-    text-shadow: none;
-  }
-
-  .carousel-control.left span {
-    padding: 15px;
-  }
-
-  .carousel-control.right span {
-    padding: 15px;
-  }
-
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-prev,
-  .carousel-control .icon-next {
-    position: absolute;
-    top: 45%;
-    z-index: 5;
-    display: inline-block;
-  }
-
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .icon-prev {
-    left: 0;
-  }
-
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next {
-    right: 0;
-  }
-
-  .carousel-control.left span,
-  .carousel-control.right span {
-    background-color: #000;
-  }
-
-  .carousel-control.left span:hover,
-  .carousel-control.right span:hover {
-    opacity: .7;
-    filter: alpha(opacity=70);
-  }
-  /* Carousel Header Styles */
-
-  .header-text {
-    position: absolute;
-    top: 20%;
-    left: 1.8%;
-    right: auto;
-    width: 96.66666666666666%;
-    color: #fff;
-  }
-
-  .header-text h2 {
-    font-size: 40px;
-  }
-
-  .header-text h2 span {
-    background-color: #2980b9;
-    padding: 10px;
-  }
-
-  .header-text h3 span {
-    background-color: #000;
-    padding: 15px;
-  }
-
-  .btn-min-block {
-    min-width: 170px;
-    line-height: 26px;
-  }
-
-  .btn-theme {
-    color: #fff;
-    background-color: transparent;
-    border: 2px solid #fff;
-    margin-right: 15px;
-  }
-
-  .btn-theme:hover {
-    color: #000;
-    background-color: #fff;
-    border-color: #fff;
-  }
-
-  a {
-    color: #ccc;
-  }
-  /*-------------------------------------*/
-
-  .cf:before,
-  .cf:after {
-    content: "";
-    display: table;
-  }
-
-  .cf:after {
-    clear: both;
-  }
-
-  .cf {
-    zoom: 1;
-  }
-  /*-------------------------------------*/
-
-  .form-wrapper {
-    width: 450px;
-    padding: 15px;
-    margin: 150px auto 50px auto;
-    background: #444;
-    background: rgba(0, 0, 0, .2);
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .2);
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .2);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .2);
-  }
-
-  .form-wrapper input {
-    width: 330px;
-    height: 20px;
-    padding: 10px 5px;
-    float: left;
-    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
-    border: 0;
-    background: #eee;
-    -moz-border-radius: 3px 0 0 3px;
-    -webkit-border-radius: 3px 0 0 3px;
-    border-radius: 3px 0 0 3px;
-  }
-
-  .form-wrapper input:focus {
-    outline: 0;
-    background: #fff;
-    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, .8) inset;
-    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .8) inset;
-    box-shadow: 0 0 2px rgba(0, 0, 0, .8) inset;
-  }
-
-  .form-wrapper input::-webkit-input-placeholder {
-    color: #999;
-    font-weight: normal;
-    font-style: italic;
-  }
-
-  .form-wrapper input:-moz-placeholder {
-    color: #999;
-    font-weight: normal;
-    font-style: italic;
-  }
-
-  .form-wrapper input:-ms-input-placeholder {
-    color: #999;
-    font-weight: normal;
-    font-style: italic;
-  }
-
-  .form-wrapper button {
-    overflow: visible;
-    position: relative;
-    float: right;
-    border: 0;
-    padding: 0;
-    cursor: pointer;
-    height: 40px;
-    width: 110px;
-    font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
-    color: #fff;
-    text-transform: uppercase;
-    background: #d83c3c;
-    -moz-border-radius: 0 3px 3px 0;
-    -webkit-border-radius: 0 3px 3px 0;
-    border-radius: 0 3px 3px 0;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
-  }
-
-  .form-wrapper button:hover {
-    background: #e54040;
-  }
-
-  .form-wrapper button:active,
-  .form-wrapper button:focus {
-    background: #c42f2f;
-  }
-
-  .form-wrapper button:before {
-    content: '';
-    position: absolute;
-    border-width: 8px 8px 8px 0;
-    border-style: solid solid solid none;
-    border-color: transparent #d83c3c transparent;
-    top: 12px;
-    left: -6px;
-  }
-
-  .form-wrapper button:hover:before {
-    border-right-color: #e54040;
-  }
-
-  .form-wrapper button:focus:before {
-    border-right-color: #c42f2f;
-  }
-
-  .form-wrapper button::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-  }
-
-  .byline p {
-    text-align: center;
-    color: #c6c6c6;
-    font: bold 18px Arial, Helvetica, Sans-serif;
-    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-  }
-
-  .byline p a {
-    color: #d83c3c;
-    text-decoration: none;
-  }
-
-  .bro {
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  a {
-    color: #1e7ad3;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline
-  }
-
-  .container,
-  .main {
-    width: 640px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 300px;
-  }
-
-  .main {
-    margin-top: 50px
-  }
-
-  input {
-    font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    color: #555860;
-  }
-
-  .search {
-    position: relative;
-    margin: 0 auto;
-    width: 300px;
-  }
-
-  .search input {
-    height: 26px;
-    width: 100%;
-    padding: 0 12px 0 25px;
-    background: white url("http://cssdeck.com/uploads/media/items/5/5JuDgOa.png") 8px 6px no-repeat;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #a8acbc #babdcc #c0c3d2;
-    border-radius: 13px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
-    -moz-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
-    -ms-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
-    -o-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
-    box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
-  }
-
-  .search input:focus {
-    outline: none;
-    border-color: #66b1ee;
-    -webkit-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
-    -moz-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
-    -ms-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
-    -o-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
-    box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
-  }
-
-  .search input:focus+.results {
-    display: block
-  }
-
-  .search .results {
-    display: none;
-    position: absolute;
-    top: 35px;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    padding: 0;
-    margin: 0;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #cbcfe2 #c8cee7 #c4c7d7;
-    border-radius: 3px;
-    background-color: #fdfdfd;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #eceef4));
-    background-image: -webkit-linear-gradient(top, #fdfdfd, #eceef4);
-    background-image: -moz-linear-gradient(top, #fdfdfd, #eceef4);
-    background-image: -ms-linear-gradient(top, #fdfdfd, #eceef4);
-    background-image: -o-linear-gradient(top, #fdfdfd, #eceef4);
-    background-image: linear-gradient(top, #fdfdfd, #eceef4);
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  }
-
-  .search .results li {
-    display: block
-  }
-
-  .search .results li:first-child {
-    margin-top: -1px
-  }
-
-  .search .results li:first-child:before,
-  .search .results li:first-child:after {
-    display: block;
-    content: '';
-    width: 0;
-    height: 0;
-    position: absolute;
-    left: 50%;
-    margin-left: -5px;
-    border: 5px outset transparent;
-  }
-
-  .search .results li:first-child:before {
-    border-bottom: 5px solid #c4c7d7;
-    top: -11px;
-  }
-
-  .search .results li:first-child:after {
-    border-bottom: 5px solid #fdfdfd;
-    top: -10px;
-  }
-
-  .search .results li:first-child:hover:before,
-  .search .results li:first-child:hover:after {
-    display: none
-  }
-
-  .search .results li:last-child {
-    margin-bottom: -1px
-  }
-
-  .search .results a {
-    display: block;
-    position: relative;
-    margin: 0 -1px;
-    padding: 6px 40px 6px 10px;
-    color: #808394;
-    font-weight: 500;
-    text-shadow: 0 1px #fff;
-    border: 1px solid transparent;
-    border-radius: 3px;
-  }
-
-  .search .results a span {
-    font-weight: 200
-  }
-
-  .search .results a:before {
-    content: '';
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    margin-top: -9px;
-    background: url("http://cssdeck.com/uploads/media/items/7/7BNkBjd.png") 0 0 no-repeat;
-  }
-
-  .search .results a:hover {
-    text-decoration: none;
-    color: #fff;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
-    border-color: #2380dd #2179d5 #1a60aa;
-    background-color: #338cdf;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #59aaf4), color-stop(100%, #338cdf));
-    background-image: -webkit-linear-gradient(top, #59aaf4, #338cdf);
-    background-image: -moz-linear-gradient(top, #59aaf4, #338cdf);
-    background-image: -ms-linear-gradient(top, #59aaf4, #338cdf);
-    background-image: -o-linear-gradient(top, #59aaf4, #338cdf);
-    background-image: linear-gradient(top, #59aaf4, #338cdf);
-    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
-    -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
-    -ms-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
-    -o-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px rgba(0, 0, 0, 0.08);
-  }
-
-   :-moz-placeholder {
-    color: #a7aabc;
-    font-weight: 200;
-  }
-
-   ::-webkit-input-placeholder {
-    color: #a7aabc;
-    font-weight: 200;
-  }
-</style>
-
-<!DOCTYPE html>
-<html>
-<link href="css/bootstrap.css" rel="stylesheet">
-<div class="container1">
-  <div class="row">
-    <!-- Carousel -->
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="images/wedo.jpg" alt="First slide">
-          <!-- Static Header -->
-          <div class="header-text hidden-xs">
-            <div class="col-md-12 text-center">
-              <h2>
-                            	<span>Welcome to <strong>WedSmart</strong></span>
-                            </h2>
-
-              <div class="bro">
-                <section class="main">
-                  <form class="search" method="post" action="index.html">
-                    <input type="text" name="q" placeholder="Search..." />
-                    <ul class="results">
-                      <li><a href="index.html">Catering<br /></a></li>
-                      <li><a href="index.html">Cards and stationary<br /></a></li>
-                      <li><a href="index.html">Deco<br /></a></li>
-                      <li><a href="index.html">Entertainment</a></li>
-                    </ul>
-                  </form>
-                </section>
-              </div>
-              <div class="">
-                <a class="btn btn-theme btn-sm btn-min-block" href="#">Login</a><a class="btn btn-theme btn-sm btn-min-block" href="#">Register</a></div>
-            </div>
-          </div>
-          <!-- /header-text -->
-        </div>
-        <div class="item">
-          <img src="http://unsplash.s3.amazonaws.com/batch%209/barcelona-boardwalk.jpg" alt="Second slide">
-          <!-- Static Header -->
-          <div class="header-text hidden-xs">
-            <div class="col-md-12 text-center">
-              <h2>
-                              <span>Welcome to <strong>WedSmart</strong></span>
-                            </h2>
-              <!-- search box -->
-              <div class="flipkart-navbar-search smallsearch col-sm-8 col-xs-11">
-                <div class="row">
-                  <input class="flipkart-navbar-input col-xs-11" type="" placeholder="Search for Products, Brands and more" name="">
-                  <button class="flipkart-navbar-button col-xs-1">
-                             <svg width="15px" height="15px">
-                                 <path d="M11.618 9.897l4.224 4.212c.092.09.1.23.02.312l-1.464 1.46c-.08.08-.222.072-.314-.02L9.868 11.66M6.486 10.9c-2.42 0-4.38-1.955-4.38-4.367 0-2.413 1.96-4.37 4.38-4.37s4.38 1.957 4.38 4.37c0 2.412-1.96 4.368-4.38 4.368m0-10.834C2.904.066 0 2.96 0 6.533 0 10.105 2.904 13 6.486 13s6.487-2.895 6.487-6.467c0-3.572-2.905-6.467-6.487-6.467 "></path>
-                             </svg>
-                         </button>
+    <!-- End: Navigation wrapper -->
+  </header>
+
+  <!-- End: HEADER -->
+  <!-- Start: MAIN CONTENT -->
+  <div class="content">
+    <!-- Start: slider -->
+    <div class="slider">
+      <div class="container-fluid">
+        <div id="heroSlider" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="active item">
+              <div class="hero-unit">
+                <div class="row-fluid">
+                  <div class="span7 marketting-info">
+                    <h1>WANT A DREAM WEDDING.</h1>
+                    <p>
+                      We are Wedsmart and we are awesome.We ensure that you achieve your dream wedding
+                    </p>
+                    <h3>
+                      <a href="#" class="btn btn-primary">Get Started</a>
+                  </h3>
+                  </div>
+                  <div class="span5">
+                    <img src="images/wedo.jpg" class="thumbnail">
+                  </div>
                 </div>
               </div>
-              <!-- /header-text -->
             </div>
             <div class="item">
-              <img src="http://unsplash.s3.amazonaws.com/batch%209/barcelona-boardwalk.jpg" alt="Third slide">
-              <!-- Static Header -->
-              <div class="header-text hidden-xs">
-                <div class="col-md-12 text-center">
-                  <h2>
-                              <span>Welcome to <strong>WedSmart</strong></span>
-                            </h2>
-                  <div class="flipkart-navbar-search smallsearch col-sm-8 col-xs-11">
-                    <div class="row">
-                      <input class="flipkart-navbar-input col-xs-11" type="" placeholder="Search for Products, Brands and more" name="">
-                      <button class="flipkart-navbar-button col-xs-1">
-                                   <svg width="15px" height="15px">
-                                       <path d="M11.618 9.897l4.224 4.212c.092.09.1.23.02.312l-1.464 1.46c-.08.08-.222.072-.314-.02L9.868 11.66M6.486 10.9c-2.42 0-4.38-1.955-4.38-4.367 0-2.413 1.96-4.37 4.38-4.37s4.38 1.957 4.38 4.37c0 2.412-1.96 4.368-4.38 4.368m0-10.834C2.904.066 0 2.96 0 6.533 0 10.105 2.904 13 6.486 13s6.487-2.895 6.487-6.467c0-3.572-2.905-6.467-6.487-6.467 "></path>
-                                   </svg>
-                               </button>
-                    </div>
+              <div class="hero-unit">
+                <div class="row-fluid">
+                  <div class="span7 marketting-info">
+                    <h1>WANT A DREAM WEDDING.</h1>
+                    <p>
+                      We are Wedsmart and we are awesome.We ensure that you achieve your dream wedding
+                    </p>
+                    <h3>
+                      <a href="#" class="btn btn-primary">Get Started</a>
+                  </h3>
                   </div>
-                  <div class="">
-                    <a class="btn btn-theme btn-sm btn-min-block" href="#">Login</a><a class="btn btn-theme btn-sm btn-min-block" href="#">Register</a></div>
+                  <div class="span5">
+                    <img src="images/dan.jpg" class="thumbnail">
+                  </div>
                 </div>
               </div>
-              <!-- /header-text -->
+            </div>
+            <div class="item">
+              <div class="hero-unit">
+                <div class="row-fluid">
+                  <div class="span7 marketting-info">
+                    <h1>WANT A DREAM WEDDING.</h1>
+                    <p>
+                      We are Wedsmart and we are awesome.We ensure that you achieve your dream wedding
+                    </p>
+                    <h3>
+                      <a href="#" class="btn btn-primary">Get Started</a>
+                  </h3>
+                  </div>
+                  <div class="span5">
+                    <img src="images/backwed.jpeg" class="thumbnail">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="hero-unit">
+                <div class="row-fluid">
+                  <div class="span7 marketting-info">
+                    <h1>WANT A DREAM WEDDING.</h1>
+                    <p>
+                      We are Wedsmart and we are awesome.We ensure that you achieve your dream wedding
+                    </p>
+                    <h3>
+                      <a href="#" class="btn btn-primary">Get Started</a>
+                  </h3>
+                  </div>
+                  <div class="span5">
+                    <img src="images/weda.jpg" class="thumbnail">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
+          <a class="left carousel-control" href="#heroSlider" data-slide="prev">‹</a>
+          <a class="right carousel-control" href="#heroSlider" data-slide="next">›</a>
         </div>
-        <!-- /carousel -->
-      </div>
-    </div>
-
-</html>
-
-<!-- body content -->
-<!DOCTYPE html>
-<html>
-
-<head>
-  <style>
-    .container2 {
-      font-family: Arial;
-    }
-
-    .alb {
-      padding-left: 40%;
-      font-family: Arial;
-      padding-top: 30px;
-      padding-bottom: 20px;
-    }
-
-    .row {
-      padding-left: 9%;
-    }
-
-    .judy {
-      padding-left: 9%;
-    }
-
-    .man {
-      padding-left: 50px;
-    }
-
-    .mum {
-      padding-left: 50%;
-    }
-
-    .jack {
-      padding-left: 50px;
-    }
-
-    .mana {
-      padding-left: 2px;
-    }
-  </style>
-
-
-  <!--HEAD-->
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <div class="alb">
-    <h4><font size="4">Vendor Reviews</h4>
-  </div>
-
-  <div class="row">
-    <div class="container2">
-      <div class="col-md-3 project">
-        <div clas="judy">
-          <a href="" target="_blank"><img src="images/joe.jpg" alt="img-1" class="img-responsive img-circle project-image" height="150" width="142" title="View Website"></a>
-        </div>
-        <h3><font size="4">It helped me to link up with my customers both locally and internationally...</h3>
-      </div>
-
-      <div class="col-md-3 project">
-        <div clas="mum">
-          <a href="https://collinsmwiti.github.io/collinsmwiti1.github.io" target="_blank"><img src="images/photo.jpg" alt="img-1" class="img-responsive img-circle project-image" height="150" width="142" title="View Website"></a>
-        </div>
-        <h3><font size="4">Security of both the user and and the vendors is catered for...</h3>
-      </div>
-      <div class="col-md-3 project">
-        <div clas="jack">
-          <a href="" target="_blank"><img src="images/black.png" alt="img-1" class="img-responsive img-circle project-image" height="150" width="142" title="View Website"></a>
-        </div>
-        <h3><font size="4">The gap between customers and us vendors has been effectly reduced ...</h3>
-      </div>
-      <div class="col-md-3 project">
-        <div clas="man">
-          <a href="" target="_blank"><img src="images/chef1.jpg" alt="img-1" class="img-responsive img-circle project-image" height="150" width="142" title="View Website"></a>
-        </div>
-        <h3><font size="4"> Wedsmart has greatly boosted me in terms of marketing ...</h3>
       </div>
     </div>
   </div>
 
-
-  <div class="row">
-    <div class="container4">
-      <div class="col-md-6 project">
-        <div class="mana">
-          <button id="myBtn" class="btn btn-primary btn-md"><img src="images/mail.svg" height="30" width="52">Subscribe</button>
-        </div>
-      </div>
-
-      <div class="col-md-6 project">
-        <button id="myBtn" class="btn btn-primary btn-md"><img src="images/mail.svg" height="30" width="52">Chat with us</button>
-      </div>
+  <!-- End: slider -->
+  <!-- Start: PRODUCT LIST -->
+  <div class="container">
+    <div class="page-header">
+      <h2>Our products</h2>
+    </div>
+    <div class="row-fluid">
+      <ul class="thumbnails">
+        <li class="span4">
+          <div class="thumbnail">
+            <img src="images/joe.jpg" alt="product name">
+            <div class="caption">
+              <h3>Dj Joe Mfalme</h3>
+              <p>
+                This dj burnt the my wedding down.The music he played made everyone dance...
+              </p>
+            </div>
+            <div class="widget-footer">
+              <p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="span4">
+          <div class="thumbnail">
+            <img src="images/photo.jpg" alt="product name" height="42">
+            <div class="caption">
+              <h3>Nitrik Photographers</h3>
+              <p>
+                I could not be happier with my wedding photos!! Nitrik Photographers went above and beyond...
+              </p>
+            </div>
+            <div class="widget-footer">
+              <p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="span4">
+          <div class="thumbnail">
+            <img src="images/cef1.jpg" alt="product name">
+            <div class=" caption ">
+              <h3>King Chefs</h3>
+              <p>
+                The food was just amazing..Dont have the right words to describe how great the food was..
+              </p>
+            </div>
+            <div class="widget-footer ">
+              <p>
+                <a href="# " class="btn btn-primary ">Read More</a>
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
-
-</html>
+  <!-- End: PRODUCT LIST -->
