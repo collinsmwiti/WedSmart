@@ -18,6 +18,10 @@
   padding-top: 2%;
 }
 
+.content {
+  /*background: url('../images/flower.jpg');*/
+}
+
 .navbar-inner, footer {
   border: none;
   padding: 15px 0;
@@ -164,4 +168,8 @@ input:-moz-placeholder {
 .page-header {
   padding-left: 45%;
   border-bottom: 1px solid #ddd;
+}
+
+.abd {
+  padding-left: 45%;
 }
